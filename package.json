@@ -21,7 +21,11 @@
       "pre-commit": "./scripts/husky"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "inquirer": "^8.0.0",
+    "node-fetch": "^2.6.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
