@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
  * @returns {Promise<JSON>} repositories for a user
  */
 async function fetchRepos(username) {
-  return fetch(`https://api.github.com/users/${username}/repos`).then((res) => res.json());
+  return fetch(`https://api.github.com/users/${username}/repos?per_page=100`).then((res) => res.json());
 }
 
 export default fetchRepos;
