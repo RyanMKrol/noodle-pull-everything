@@ -1,18 +1,22 @@
 {
   "name": "noodle-pull-everything",
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": [
+    "git"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/RyanMKrol/noodle-pull-everything.git"
   },
   "license": "MIT",
   "main": "build/index.js",
+  "bin": {
+    "noodle-pull-everything": "./build/index.js"
+  },
   "files": [
     "build"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run lint && shx rm -rf build && ./node_modules/.bin/babel src --out-dir build",
     "lint": "eslint src/ --ext .js"
   },
